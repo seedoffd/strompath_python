@@ -1,6 +1,5 @@
 node{
-    properties([parameters([string(defaultValue: 'IP', description: 'where to build e.g IP', name: 'ENV', trim: true)])])
-    stage("Clone repo"{
+properties([parameters([string(defaultValue: 'IP', description: 'where to build e.g IP', name: 'ENV', trim: true)])])    stage("Clone repo"{
         git "git@github.com:seedoffd/Flaskex.git"
     }
     stage("build application"){
